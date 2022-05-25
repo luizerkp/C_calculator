@@ -1,13 +1,12 @@
 #  C Calculator
 #### Video Demo:  <https://youtu.be/rPMxPo5jqxc>
 #### Description:
-###### This is a command line calculator implemented entirely in C, it can perform  addition, subtraction, division, multiplication, modulo, logarithm,
-###### exponent, root, percent, & factorial. For addition, subtraction, division and multiplication it can take up to ten inputs, for the others it is either two
-###### or one. It takes as input the program plus one of the operations listed and returns the as output the calculated results in either scientific notation for
-###### results that are either too big or too small  or just a number with 7 decimal places. I debated on just outputting the answer in raw format with 7 decimal
-###### places but the factorial of 999 for example just outputted a wall of numbers that had very little meaning to the user. I originally wanted to use **%g**
-###### format specifier but decided to use my own logic to decide whether to output in scientific notation **%e** or just a long double with 7 decimal
-###### places **%.7Lf**. Any number that falls out the range *0.000001 - 9999999999.999999* will be displayed in scientific notation.
+This is a command line calculator implemented entirely in C, it can perform  addition, subtraction, division, multiplication, modulo, logarithm,
+exponent, root, percent, & factorial. For addition, subtraction, division and multiplication it can take up to ten inputs, for the others it is either twor one. It takes as input the program plus one of the operations listed and returns the as output the calculated results in either scientific notation for
+results that are either too big or too small  or just a number with 7 decimal places. I debated on just outputting the answer in raw format with 7 decimal
+places but the factorial of 999 for example just outputted a wall of numbers that had very little meaning to the user. I originally wanted to use **%g**
+format specifier but decided to use my own logic to decide whether to output in scientific notation **%e** or just a long double with 7 decimal
+places **%.7Lf**. Any number that falls out the range *0.000001 - 9999999999.999999* will be displayed in scientific notation.
 
 ###### The input is taken in as a string, then verified for validity through various checks and stored in an array of strings. This array in later
 ###### converted into an array of long doubles. The decision to use long doubles was made to allow a wider set of inputs. I originally had many global
