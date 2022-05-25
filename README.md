@@ -8,15 +8,15 @@ places but the factorial of 999 for example just outputted a wall of numbers tha
 format specifier but decided to use my own logic to decide whether to output in scientific notation **%e** or just a long double with 7 decimal
 places **%.7Lf**. Any number that falls out the range *0.000001 - 9999999999.999999* will be displayed in scientific notation.
 
-###### The input is taken in as a string, then verified for validity through various checks and stored in an array of strings. This array in later
-###### converted into an array of long doubles. The decision to use long doubles was made to allow a wider set of inputs. I originally had many global
-###### variables but midway I realized this not a good design, therefore I reworked my code to accept those values as function parameters instead. I also
-###### decided to use a MAKEFILE to compile multiple source files into one program, however after learning about MAKEFILES and making my own simple one in
-###### VS studio, I dropped this a idea because it was time consuming to get it working correctly due to my lack of familiarity compiling multiple source
-###### files as well as building MAKE files. For the scope of this program I did not think that it would have any added advantage by using multiple source
-###### files.
+The input is taken in as a string, then verified for validity through various checks and stored in an array of strings. This array in later
+converted into an array of long doubles. The decision to use long doubles was made to allow a wider set of inputs. I originally had many global
+variables but midway I realized this not a good design, therefore I reworked my code to accept those values as function parameters instead. I also
+decided to use a MAKEFILE to compile multiple source files into one program, however after learning about MAKEFILES and making my own simple one in
+VS studio, I dropped this a idea because it was time consuming to get it working correctly due to my lack of familiarity compiling multiple source
+files as well as building MAKE files. For the scope of this program I did not think that it would have any added advantage by using multiple source
+files.
 
-###### This project has been a learning opportunity and while it is not as impressive as some of the other final projects I had in mind, it did
-###### challenge my knowledge of the basics. For example the limits of the different data types, as well as the limits of the different library
-###### functions. For Example I originally intended to use **fscanf()** but I ran into problems with validation so that I would force the user to
-###### input a number in the correct format, as result I ended using **fgets()**.
+This project has been a learning opportunity and while it is not as impressive as some of the other final projects I had in mind, it did
+challenge my knowledge of the basics. For example the limits of the different data types, as well as the limits of the different library
+functions. For Example I originally intended to use **fscanf()** but I ran into problems with validation so that I would force the user to
+input a number in the correct format, as result I ended using **fgets()**.
